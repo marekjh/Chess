@@ -20,6 +20,8 @@ def quadratic_primes(primes):
     #This embedded loop takes care of constructing the list, starting with checking n = 1
     for b in primes:
         a_min = int(-(b + 1))
+        if a_min % 2 == 0:
+            a_min += 1
         
         for a in range(a_min, 999, 2):
             formula = (1 ** 2) + (a * 1) + b

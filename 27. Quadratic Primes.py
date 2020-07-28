@@ -1,3 +1,6 @@
+# *** Problem description here: projecteuler.net/problem=27 ***
+
+
 def check_prime(n):
     number_string = str(n)
     digit_sum = 0

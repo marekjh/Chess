@@ -1,3 +1,6 @@
+# ***Problem description here: projecteuler.net/problem=27 ***
+
+
 def check_prime(n, mode = "check"):
     i = 0
     

@@ -1,4 +1,4 @@
-*** Problem description here: https://projecteuler.net/problem=24 ***
+# *** Problem description here: https://projecteuler.net/problem=24 ***
 
 
 import math

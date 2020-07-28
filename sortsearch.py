@@ -36,7 +36,7 @@ def merge_sort(unsorted_list):
     return sorter[0]
 
 
-def binary_search(sorted_list, search_item, pos_tracker):
+def binary_search(sorted_list, search_item, pos_tracker): #Function must be called with pos_tracker set to a value equivalent to mid_index's initial value within the function
     mid_index = len(sorted_list) // 2
     front_half = sorted_list[:mid_index]
     back_half = sorted_list[mid_index + 1:]

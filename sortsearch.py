@@ -44,14 +44,13 @@ def binary_search(sorted_list, search_item, pos_tracker): #Function must be call
     if sorted_list[mid_index] == search_item:
         return pos_tracker
     
+    if sorted_list[mid_index] > search_item:
+        index_offset = len(front_half) // 2
+        if len(front_half) % 2 == 1:
+            index_offset += 1
+        pos_tracker -= index_offset
+        return binary_search(front_half, search_item, pos_tracker)
     else:
-        if sorted_list[mid_index] > search_item:
-            index_offset = len(front_half) // 2
-            if len(front_half) % 2 == 1:
-                index_offset += 1
-            pos_tracker -= index_offset
-            return binary_search(front_half, search_item, pos_tracker)
-        else:
-            index_offset = (len(back_half) // 2) + 1
-            pos_tracker += index_offset
-            return binary_search(back_half, search_item, pos_tracker)        
+        index_offset = (len(back_half) // 2) + 1
+        pos_tracker += index_offset
+        return binary_search(back_half, search_item, pos_tracker)        

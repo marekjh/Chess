@@ -30,5 +30,5 @@ def max_sum(triangle):
     
     return max_sum(triangle)
             
-input_triangle = triangle_constructor("nums_in_triangle2.txt")
+input_triangle = triangle_constructor("name_of_file.txt")
 print(max_sum(input_triangle))

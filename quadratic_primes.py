@@ -4,6 +4,9 @@
 def check_prime(n, mode = "check"):
     i = 0
     
+    if n == 0:
+        return False
+    
     while prime_list[i] <= n ** 0.5:
         if n % prime_list[i] == 0:
             return False

@@ -1,3 +1,3 @@
-# Python-Projects
+# My Personal Chess Project
 
-The projects here are ones I have worked on that I found particularly interesting and ended up turning out well.
+Simple playable chess application that uses the Stockfish chess engine and the Python Arcade and Chess libraries.

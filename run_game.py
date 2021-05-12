@@ -6,7 +6,7 @@ import chess.engine
 import board_config
 from math import floor, ceil
 
-os.chdir("C:/Users/marek/OneDrive/Documents/VSCode/Python/chess_game")
+
 files = board_config.CENTER_X - (board_config.BOARD_SIDELENGTH / 2) 
 ranks = board_config.CENTER_Y - (board_config.BOARD_SIDELENGTH / 2)
 offset = board_config.BOARD_SIDELENGTH / 16

@@ -120,9 +120,9 @@ class GameofChess(arcade.Window):
             self.end = self.flipper(self.end)
         if len(move) == 5:
             if move[4] == "q":
-                self.promotion_choicep[0] = "queen"
+                self.promotion_choice[0] = "queen"
             elif move[4] == "r":
-                self.promtion_choice[0] = "rook"
+                self.promotion_choice[0] = "rook"
             elif move[4] == "n":
                 self.promotion_choice[0] = "knight"
             else:
